@@ -1,0 +1,170 @@
+@font-face {
+    font-family: Outfit; 
+    src: url('./Outfit/static/Outfit-Regular.ttf');
+}
+
+@font-face {
+    font-family: OutfitBold; 
+    src: url('./Outfit/static/Outfit-Bold.ttf');
+}
+
+@font-face {
+    font-family: OutfitLight; 
+    src: url('./Outfit/static/Outfit-Light.ttf');
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.nft-box {
+    background-color: hsl(216, 50%, 16%); 
+    width: 320px; height: 550px; 
+    border-radius: 20px; 
+    display: block; 
+    margin: 19vh auto auto;
+}
+
+.nft-image{
+    width: 280px; 
+    height: 280px; 
+    border-radius: 12px; 
+    margin: 40px auto;
+    position: relative;
+    top: 20px;
+}
+
+#img-tag {
+    width: 280px; 
+    height: 280px; 
+    border-radius: 10px;
+}
+
+.nft-image .overlay {
+    width: 280px; 
+    height: 280px;
+    border-radius: 12px;  
+    background-color: hsl(178, 100%, 50%);
+    position: absolute;
+    opacity: 0;
+    top: 0; left: 0;
+    cursor: pointer;
+}
+
+.nft-image:hover .overlay {
+    opacity: 0.6;
+}
+
+.nft-image:hover .icon{
+    opacity: 1;
+    size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+
+.nft-title h2{
+    font-family: Outfit;
+    color: hsl(0, 0%, 100%);
+    padding-left: 22px;
+    margin-top: 1px;
+    font-size: 21px;
+}
+
+.nft-title h2:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.nft-spec {
+    font-family: OutfitLight;
+    color: hsl(215, 51%, 70%);
+    padding-left: 22px;
+    margin-top: 1px;
+    font-size: 16px;
+}
+
+.nft-price-day{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.nft-price img {
+    size: 50px;
+    margin-left: 21px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.nft-price span {
+    font-family: OutfitBold;
+    color: hsl(178, 100%, 50%);
+    margin-left: 42px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    position: absolute;
+}
+
+.nft-day img {
+    size: 50px;
+    left: 201px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.nft-day span {
+    font-family: OutfitLight;
+    color: hsl(215, 51%, 70%);
+    left: 225px;
+    bottom: 3px;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+hr {
+    width: 275px;
+    border: 0.5px solid hsl(215, 32%, 27%);
+}
+
+
+.nft-creator span{
+    font-family: Outfit;
+    color: hsl(215, 51%, 70%);
+    font-size: 15px;
+    left: 35px;
+    position: relative;
+}
+
+#nft-avatar{
+    width: 10%;
+    left: 21px;
+    top: 10px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100px;
+    position: relative;
+}
+
+#creator-name{
+    color: hsl(0, 0%, 100%);
+} 
+
+#creator-name:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+} 
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-top: 200px;
+    color: white;
+}
+
+.attribution a { 
+    color: hsl(229, 50%, 69%); 
+}
