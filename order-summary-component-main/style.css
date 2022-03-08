@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+    background-image:url("images/pattern-background-desktop.svg");
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    background-repeat:no-repeat;
+    background-size:contain;
+    display:flex;
+    flex-direction:column;
+    min-height: 95vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-box{
+    background-color: white; 
+    width: 400px; height: 600px; 
+    border-radius: 20px;
+    align-self: center;
+}
+
+.order-img img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    align-self: center;
+}
+
+.order-title h2{
+    text-align: center;
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+    padding:5px;
+}
+
+.order-description p{
+    width: 75%;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    opacity: 70%;
+    font-size: 16px;
+    margin:auto;
+}
+
+.order-payment{
+    display: flex;
+    width: 330px; height: 85px;
+    margin: 20px auto auto;    
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%); 
+}
+
+.order-payment img{
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.order-price{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+
+.order-price #content1{
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+    margin-top: 20px;
+}
+
+.order-price #content2{
+    font-weight: 200;
+    color: hsl(224, 23%, 55%);
+    margin-top: 5px;
+}
+
+.order-payment a{
+    font-size: 14px;
+    color: hsl(245, 75%, 52%);
+    margin-left: 85px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.order-payment a:hover{
+    text-decoration: none;
+    opacity: 50%;
+    transition: 300ms; 
+}
+
+.order-button {
+    width: 330px; height: 45px;
+    text-align: center;
+    margin: 20px auto auto;    
+    border-radius: 10px;
+}
+
+#payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(245, 75%, 52%);
+    opacity: 90%;
+    cursor: pointer;
+    box-shadow: 1px 10px hsl(225, 100%, 98%);
+    margin-top: 30px;
+}
+
+#payment:hover {
+    opacity: 50%;
+    transition: 300ms;    
+}
+
+#payment a {
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+#cancel {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#cancel a {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#cancel a:hover {
+    color: hsl(223, 47%, 23%);
+    transition: 300ms; 
+}
+
+@media only screen and (max-width: 500px) {
+
+    .order-box{
+        background-color: white; 
+        width: 330px; height: 550px; 
+        border-radius: 20px;
+        align-self: center;
+    }
+
+    .order-description p{
+        width: 75%;
+        text-align: center;
+        color: hsl(224, 23%, 55%);
+        opacity: 70%;
+        font-size: 14px;
+        margin:auto;
+    }
+
+    .order-payment{
+        display: flex;
+        width: 290px; height: 85px;
+        margin: 20px auto auto;    
+        border-radius: 10px;
+        background-color: hsl(225, 100%, 98%);
+        font-size: 14px;
+    }
+
+    .order-payment a{
+        font-size: 14px;
+        color: hsl(245, 75%, 52%);
+        margin-left: 65px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .order-button {
+        width: 290px; height: 45px;
+        text-align: center;
+        margin: 20px auto auto;    
+        border-radius: 10px;
+    }
+    
+
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.attribution a { 
+    color: hsl(229, 50%, 69%); 
+}
